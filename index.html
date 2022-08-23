@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+    </header>
+
+    <main>
+        <!-- Search pokemon -->
+        <div id="srcContainer">
+            <input type="search" id="srcPoke" placeholder="Ex: Pikachu or 25">
+            <input type="checkbox" name="shiny" id="pokeShiny">
+            <label for="pokeShiny">Shiny</label>
+        </div>
+        
+        <button type="button" id="pokeGet">Get Pokemon</button>
+        
+        <!-- Pokedex -->
+        <div id="pokedexContainer">
+            <div id="blueBall"></div>
+            <h2 id="pokeName">----</h2>
+            <img id="pokeSprit">
+            <h3 id="pokeNum">N° --</h3>
+            <div id="pokeTypes">
+                <img src="./img/typenull.png" id="typeI" class="imgType" title="None">
+                <img src="./img/typenull.png" id="typeII" class="imgType" title="None">
+            </div>
+            <!-- Some info about pokemon -->
+            <table id="pokeData">
+                <tbody>
+                    <tr>
+                        <th>Height:</th>
+                        <td id="dataHeight">-- m</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Weight:</th>
+                        <td id="dataWeight">-- kg</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>First ability:</th>
+                        <td id="dataAbilityI">None</td>
+                    </tr>
+                    <tr>
+                        <th>Second ability:</th>
+                        <td id="dataAbilityII">None</td>
+                    </tr>
+                    <tr>
+                        <th>Hidden Ability:</th>
+                        <td id="dataHidden">None</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <!-- Base Status -->
+        <table id="pokeStatus">
+            <thead>
+                <tr>
+                    <th>Base Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- HP -->
+                    <th>HP</th>
+                    <td class="baseStatus" id="baseHP">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellHP"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Attack -->
+                    <th>Attack</th>
+                    <td class="baseStatus" id="baseAttack">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellAttack"></div>
+                    </td>
+                </tr>
+                <tr> <!-- Defence -->
+                    <th>Defence</th>
+                    <td class="baseStatus" id="baseDefence">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellDefence"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Sp. Attack -->
+                    <th>Sp. Attack</th>
+                    <td class="baseStatus" id="baseSpAttack">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellSpAttack"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Sp. Defence -->
+                    <th>Sp. Defence</th>
+                    <td class="baseStatus" id="baseSpDefence">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellSpDefence"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Speed -->
+                    <th>Speed</th>
+                    <td class="baseStatus" id="baseSpeed">-</td>
+                    <td>
+                        <div class="cellStatus" id="cellSpeed"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Status total -->
+                    <th id="totalTitle">Total</th>
+                    <td class="baseStatus" id="totalBase">-</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

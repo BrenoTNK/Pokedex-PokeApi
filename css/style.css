@@ -1,0 +1,247 @@
+*
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+header
+{
+    background-color: #777;
+    text-align: center;
+    padding: 1em;
+}
+
+main
+{
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    background-color: #ddd;
+}
+
+main table
+{
+    margin: auto;
+}
+
+    /* Search pokemon */
+
+main div#srcContainer
+/* Container to search a pokemon */
+{
+    display: flex;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+    margin: auto auto 1em auto;
+}
+
+main div#srcContainer input#srcPoke
+/* Search box pokemon */
+{
+    height: 2em;
+    border-radius: 2em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+}
+
+main div#srcContainer input#pokeShiny
+/* Checkbox to pokemon be shiny */
+{
+    width: 1.4em;
+}
+
+main div#srcContainer label
+/* Checkbox's label */
+{
+    margin: 0.3em 0.3em auto 0.3em;
+}
+
+    /* Pokedex */
+
+main div#pokedexContainer
+/* Pokedex container */
+{
+    margin: auto auto 1.2em auto;
+    padding: 1em;
+    border-radius: 3em;
+
+    width: 100%;
+    max-width: 425px;
+
+    background-color: #ff0000;
+    color: #eee;
+}
+
+main div#blueBall
+/* Pokedex decoration */
+{
+    display: flex;
+    border: 0.4em solid#fff;
+    border-radius: 24px;
+    position: absolute;
+
+    background-color: rgb(64, 64, 252);
+    width: 32px;
+    height: 32px;
+}
+
+main div#pokedexContainer h2
+/* Pokemon's name */
+{
+    font-size: 2.8em;
+}
+
+main div#pokedexContainer img#pokeSprit
+/* Pokemon's sprit */
+{
+    margin: 1em auto 1em auto;
+    border: 1em solid #555;
+    border-radius: 21px;
+
+    height: 280px;
+    width: 280px;
+    background-color: #eee;
+}
+
+main div#pokedexContainer h3
+/* Pokemon's number */
+{
+    font-size: 2.3em;
+}
+
+main div#pokedexContainer div#pokeTypes
+/* Div to pokemon's types img */
+{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div#pokedexContainer img.imgType
+/* Type's img */
+{
+    background-color: #eee;
+
+    border: 8px solid #555;
+    border-radius: 64px;
+    width: 64px;
+}
+    
+    /* Some info about pokemon */
+
+main table#pokeData
+/* Table about pokemon */
+{
+    margin: 1em auto 1.2em auto;
+    border: 0.5em solid #555;
+    border-radius: 1em;
+    padding: 0.6em;
+
+    font-size: 1.3em;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    color: #222;
+}
+
+main table#pokeData tr
+{
+    display: flexbox;
+    justify-content: center;
+}
+
+main table#pokeData th
+{
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+}
+
+main table#pokeData td
+{
+    justify-content: center;
+}
+
+main button#pokeGet
+/* Button to get a pokemon */
+{
+    margin: auto auto 1em auto;
+    border: 2px solid #333;
+    border-radius: 2em;
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    width: 120px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+    /* Base status of pokemon */
+
+main table#pokeStatus
+/* Table about base status */
+{
+    border: 0.2em solid #888;
+    border-radius: 16px;
+    padding: 0.8em;
+    margin-top: 1em;
+
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    background-color: #eee;
+}
+
+main table#pokeStatus thead th
+/* Title */
+{
+    padding-left: 4.5em;
+    font-size: 24px;
+}
+
+main table#pokeStatus tbody th
+/* Name status */
+{
+    font-size: 18px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+
+main table#pokeStatus tbody td.baseStatus
+/* Space between the number status */
+{
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main table#pokeStatus div.cellStatus
+/* Status cell */
+{
+    border: 1px solid #333;
+    border-radius: 16px;
+    background-color: #222;
+    width: 0.1em;
+    height: 1.5em;
+}
+
+main table#pokeStatus th#totalTitle
+/* Title */
+{
+    font-size: 23px;
+}
+
+main table#pokeStatus td#totalBase
+{
+    font-size: 21px;
+}
+
